@@ -1,7 +1,6 @@
 body {
-  font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  font-family: 'Roboto', sans-serif;
+  background-color: #5cdb95;
   background-attachment: fixed;
  
   position: absolute;
@@ -12,42 +11,39 @@ body {
  
   padding: 0;
   margin: 0;
- 
-  font-size: 14px;
 }
- 
+
 .container {
   max-width: 600px;
   margin: 0 auto;
   min-height: 100%;
-  background: white;
+  background: #edf5e1;
+  box-shadow: 0 4px 8px 0 grey;
 }
- 
+
 header {
-  background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  background: #379683;
   padding: 20px 15px 15px 15px;
   position: relative;
+  box-shadow: 0 2px 0 0 grey;
 }
- 
-#login-buttons {
-  display: block;
-}
- 
+
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 1em;
+  font-family: 'Ropa Sans', sans-serif;
+  color: #edf5e1;
 }
- 
+
 form {
   margin-top: 10px;
   margin-bottom: -10px;
   position: relative;
 }
- 
+
 .new-task input {
   box-sizing: border-box;
   padding: 10px 0;
@@ -56,18 +52,20 @@ form {
   width: 100%;
   padding-right: 80px;
   font-size: 1em;
+  color: #edf5e1;
+  font-family: 'Roboto', sans-serif;
 }
- 
+
 .new-task input:focus{
   outline: 0;
 }
- 
+
 ul {
   margin: 0;
   padding: 0;
-  background: white;
+  background: #edf5e1;
 }
- 
+
 .delete {
   float: right;
   font-weight: bold;
@@ -76,50 +74,56 @@ ul {
   border: none;
   position: relative;
 }
- 
+
 li {
   position: relative;
   list-style: none;
   padding: 15px;
   border-bottom: #eee solid 1px;
 }
- 
+
 li .text {
   margin-left: 10px;
 }
- 
-li.checked {
-  color: #888;
-}
- 
+
 li.checked .text {
   text-decoration: line-through;
 }
- 
+
 li.private {
-  background: #eee;
+  background: #8ee4af;
   border-color: #ddd;
 }
- 
+
 header .hide-completed {
   float: right;
+  color: #edf5e1;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 20px;
 }
- 
+
 .toggle-private {
   margin-left: 5px;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
 }
- 
-@media (max-width: 600px) {
-  li {
-    padding: 12px 15px;
-  }
- 
-  .search {
-    width: 150px;
-    clear: both;
-  }
- 
-  .new-task input {
-    padding-bottom: 5px;
-  }
+
+.text {
+  font-family: 'Kalam', cursive;
+  color: #05386b;
+}
+.login-link-text {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 18px;
+  padding: 0 7px;
+  color: #edf5e1;
+}
+.login-close-text {
+  font-family: 'Ropa Sans', sans-serif;
+  color: #05386b;
+}
+#login-buttons .login-button, .accounts-dialog .login-button {
+  background: #379683;
+  color: #edf5e1;
+  border-color: #05386b;
 }
